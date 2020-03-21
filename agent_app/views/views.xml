@@ -1,19 +1,19 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="my_module.list">
-      <field name="name">my_module list</field>
-      <field name="model">my_module.my_module</field>
+    
+    <record model="ir.ui.view" id="agent.list">
+      <field name="name">Agent data</field>
+      <field name="model">agent_app.agentmodel</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="location"/>
+          <field name="balance"/>
         </tree>
       </field>
     </record>
-    -->
+    
 
     <!-- actions opening views on models -->
     <!--

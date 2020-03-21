@@ -36,7 +36,7 @@ class AgentModel(models.Model):
     kind = fields.Char()
     balance = fields.Monetary(compute='_compute_balance')
 
-    @api.multi()
+    
     def _compute_balance(self, amount,status):
         for record in self:
             if status == 'delivered':
