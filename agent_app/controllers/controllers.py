@@ -17,4 +17,8 @@ from odoo import http
 #     def object(self, obj, **kw):
 #         return http.request.render('my_module.object', {
 #             'object': obj
-#         })
+
+class Agent_App(http.Controller):
+	@http.route('agent_app/agentlist/<module(agent_app.agent_app"):obj>/', auth='public')
+	def object(self, obj, **kw):
+		return http.request.render('agent_app.object',{'object':obj})
