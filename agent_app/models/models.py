@@ -34,7 +34,7 @@ class AgentModel(models.Model):
     email = fields.Boolean()
     organized = fields.Boolean()
     kind = fields.Char()
-    balance = fields.Monetary(compute='_compute_balance')
+    balance = fields.Float(compute='_compute_balance')
 
     
     def _compute_balance(self, amount,status):
