@@ -2,7 +2,7 @@
   <data>
     <!-- explicit list view definition -->
     
-    <record model="ir.ui.view" id="agent.list">
+    <record model="ir.ui.view" id="agent_app.agentmodel">
       <field name="name">Agent data</field>
       <field name="model">agent_app.agentmodel</field>
       <field name="arch" type="xml">
