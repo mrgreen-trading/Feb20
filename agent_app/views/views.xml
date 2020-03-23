@@ -24,7 +24,13 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
+          <field name="phone"/>
           <field name="location"/>
+          <field name="city_id"/>
+          <field name="town_id"/>
+          <field name="mpesa"/>
+          <field name="completed"/>
+          <field name="email"/>
           <field name="balance"/>
         </tree>
       </field>
