@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Agents App",
+    'name': "MGA payment hub",
 
     'summary': """
-        Module to automatically add agents as well information regarding their payments""",
+        MGA Payment hubs application """,
 
     'description': """
         Long description of module's purpose
