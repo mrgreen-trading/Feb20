@@ -2,9 +2,9 @@ import xmlrpc.client
 
 HOST = 'https://mrgreen-trading-feb20.odoo.com'
 PORT = ''
-DB = '012020'
-USER = 'odoo'
-PASS = 'Ubuntu13'
+DB = 'mrgreen-trading-feb20-p01-915733'
+USER = 'admin'
+PASS = 'admin'
 common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(HOST))
 print(common.version())
 uid = common.authenticate(DB, USER, PASS, {})
