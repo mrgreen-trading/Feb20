@@ -7,10 +7,7 @@
       <field name="name">Agents </field>
       <field name="res_model">agent_app.agentmodel</field>
       <field name="view_mode">tree,form</field>
-       <field name="help" type="html">
-          <p class="oe_view_no_content_create">Add new Agent
-          </p>
-      </field>
+       
     </record>
 
     <menuitem name="Agents App" id="main_agent_app_menu"/>
