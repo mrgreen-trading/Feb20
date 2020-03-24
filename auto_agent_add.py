@@ -9,6 +9,11 @@ common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(HOST))
 print(common.version())
 uid = common.authenticate(DB, USER, PASS, {})
 print(uid)
+models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(HOST))
+res = models.execute_kw(DB, uid, PASS,
+    'agent_app.agentmodel', 'check_access_rights',
+    ['read'], {'raise_exception': False})
+print(res)
 # Create a new note
 #sock = xmlrpc.client.ServerProxy(root + 'object')
 #args = {
