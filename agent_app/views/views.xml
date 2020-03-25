@@ -10,7 +10,7 @@
        
     </record>
 
-    <menuitem name="Agents App" id="main_agent_app_menu"/>
+    <menuitem name="MGA payment hub" id="main_agent_app_menu"/>
     
     <menuitem name="Agents Menu" id="agent_app_menu" parent="main_agent_app_menu" />
       
