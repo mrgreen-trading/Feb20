@@ -19,6 +19,7 @@ class AgentModel(models.Model):
     _description = "Agents database model"
 
     name = fields.Char(required=True)
+    ussd_id = fields.Char()
     phone = fields.Char()
     location = fields.Char()
     city_id = fields.Integer()
