@@ -29,7 +29,7 @@
           <field name="phone"/>
           <field name="location"/>
           <field name="city_id"/>
-          <field name="town_id"/>
+          <field name="area"/>
           <field name="mpesa"/>
           <field name="completed"/>
           <field name="email"/>
@@ -52,7 +52,7 @@
                             <field name="ussd_id"/>
                             <field name="location"/>
                             <field name="city_id"/>
-                            <field name="town_id"/>
+                            <field name="area"/>
                             <field name="mpesa"/>
                             <field name="completed"/>
                             <field name="direction"/>
@@ -79,6 +79,7 @@
                     <field name="name"/>
                     <field name="ussd_id"/>
                     <field name="location"/>
+                    <field name="area"/>
                     <field name="completed"/>
                 </search>
             </field>
