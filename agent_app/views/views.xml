@@ -34,11 +34,11 @@
       
       <menuitem name="Agents" id="agents_menu" parent="agent_app_menu"
               action="agent_list_action"/>
-     <menuitem name="Agents" id="location_menu" parent="agent_app_menu"
+     <menuitem name="Agent Types" id="location_menu" parent="agent_app_menu"
               action="agenttype_list_action"/>
-     <menuitem name="Agents" id="agenttype_menu" parent="agent_app_menu"
+     <menuitem name="Locations" id="agenttype_menu" parent="agent_app_menu"
               action="location_list_action"/>
-     <menuitem name="Agents" id="tradingpoint_menu" parent="agent_app_menu"
+     <menuitem name="Trading Points" id="tradingpoint_menu" parent="agent_app_menu"
               action="tradingpoint_list_action"/>
       
     <!-- explicit list view definition -->
