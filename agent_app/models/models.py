@@ -48,7 +48,7 @@ class AgentModel(models.Model):
                 record.balance -= amount
     
 class AgentType(models.Model):
-    _name = 'agentapp_agenttype'
+    _name = 'agentapp.agenttype'
     _description = 'Agent type database'
     
     name = fields.Char(required=True)
@@ -56,7 +56,7 @@ class AgentType(models.Model):
     active = fields.Boolean()
     
 class Location(models.Model):
-    _name = 'agentapp_location'
+    _name = 'agentapp.location'
     _description = 'Location model for MGA Payment Hub Module'
     
     name = fields.Char(required=True)
@@ -64,7 +64,7 @@ class Location(models.Model):
     active = fields.Boolean()
 
 class TradingPoint(models.Model):
-    _name = 'agentapp_tradingpoint'
+    _name = 'agentapp.tradingpoint'
     _description = 'Trading point model for MGA Payment Hub'
     
     city = fields.Many2one('agentapp_location',
