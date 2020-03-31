@@ -60,14 +60,14 @@ class Location(models.Model):
     _description = 'Location model for MGA Payment Hub Module'
     
     name = fields.Char(required=True)
-    tradingpoint = fields.One2many('agentapp.tradingpoint','city')
+    tradingpoint = fields.One2many('agent_app.tradingpoint','city')
     active = fields.Boolean()
 
 class TradingPoint(models.Model):
     _name = 'agent_app.tradingpoint'
     _description = 'Trading point model for MGA Payment Hub'
     
-    city = fields.Many2one('agentapp.location',
+    city = fields.Many2one('agent_app.location',
         ondelete='cascade', string="City", required=True)
     name = fields.Char(required=True)
     active = fields.Boolean()
