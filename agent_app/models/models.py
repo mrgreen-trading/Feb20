@@ -37,6 +37,7 @@ class AgentModel(models.Model):
     organized = fields.Boolean()
     kind = fields.Char()
     balance = fields.Float()
+    partner_id = fields.Many2one('res.partner', string="Partner")
 
     @api.model
     def _compute_balance(self, amount,status):
@@ -59,6 +60,7 @@ class Location(models.Model):
     _description = 'Location model for MGA Payment Hub Module'
     
     name = fields.Char(required=True)
+    tradingpoint = fields.One2many('agentapp_tradingpoint','city')
     active = fields.Boolean()
 
 class TradingPoint(models.Model):
