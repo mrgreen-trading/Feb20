@@ -84,8 +84,68 @@
                 </search>
             </field>
         </record>
-   
-
+ <!-- Agent type list view -->
+  
+    <record model="ir.ui.view" id="agent_app.agenttype">
+      <field name="name">Listing Agent Type</field>
+      <field name="model">agent_app.agenttype</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="kind"/>
+          <field name="active"/>
+         
+        </tree>
+      </field>
+    </record>   
+<!-- Agent Type Form-->
+     <record model="ir.ui.view" id="agenttype_form_view">
+            <field name="name">Agent Type Form</field>
+            <field name="model">agent_app.agenttype</field>
+            <field name="arch" type="xml">
+                <form string="Agents Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="kind"/>
+                            <field name="active"/>
+                           
+                            
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+<!-- Location List View -->
+  <record model="ir.ui.view" id="agent_app.location">
+      <field name="name">Listing Location</field>
+      <field name="model">agent_app.location</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="tradingpoint"/>
+          <field name="active"/>
+         
+        </tree>
+      </field>
+    </record>      
+<!-- Location Form View -->
+  <record model="ir.ui.view" id="location_form_view">
+            <field name="name">Location Form</field>
+            <field name="model">agent_app.location</field>
+            <field name="arch" type="xml">
+                <form string="Agents Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="active"/>
+                           
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+    </record>   
     <!-- server action to the one above -->
     <!--
     <record model="ir.actions.server" id="agent_app.action_server">
