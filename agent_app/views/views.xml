@@ -9,6 +9,24 @@
       <field name="view_mode">tree,form</field>
        
     </record>
+    <record model="ir.actions.act_window" id="agenttype_list_action">
+      <field name="name">Agent Types </field>
+      <field name="res_model">agent_app.agenttype</field>
+      <field name="view_mode">tree,form</field>
+       
+    </record>
+    <record model="ir.actions.act_window" id="location_list_action">
+      <field name="name">Locations </field>
+      <field name="res_model">agent_app.location</field>
+      <field name="view_mode">tree,form</field>
+       
+    </record>
+    <record model="ir.actions.act_window" id="tradingpoint_list_action">
+      <field name="name">Trading Points </field>
+      <field name="res_model">agent_app.tradingpoint</field>
+      <field name="view_mode">tree,form</field>
+       
+    </record>
 
     <menuitem name="MGA payment hub" id="main_agent_app_menu"/>
     
@@ -16,6 +34,12 @@
       
       <menuitem name="Agents" id="agents_menu" parent="agent_app_menu"
               action="agent_list_action"/>
+     <menuitem name="Agents" id="location_menu" parent="agent_app_menu"
+              action="agenttype_list_action"/>
+     <menuitem name="Agents" id="agenttype_menu" parent="agent_app_menu"
+              action="location_list_action"/>
+     <menuitem name="Agents" id="tradingpoint_menu" parent="agent_app_menu"
+              action="tradingpoint_list_action"/>
       
     <!-- explicit list view definition -->
     
@@ -146,6 +170,23 @@
                 </form>
             </field>
     </record>   
+<!-- Trading Point Form view -->
+   <record model="ir.ui.view" id="tradingpoint_form_view">
+            <field name="name">Create Trading Point</field>
+            <field name="model">agent_app.tradingpoint</field>
+            <field name="arch" type="xml">
+                <form string="Create Trading Point">
+                    <sheet>
+                        <group>
+                            <field name="city"/>
+                            <field name="name"/>
+                            <field name="active"/>
+                           
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+    </record>     
     <!-- server action to the one above -->
     <!--
     <record model="ir.actions.server" id="agent_app.action_server">
