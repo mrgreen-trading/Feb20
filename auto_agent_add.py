@@ -17,3 +17,8 @@ print(uid)
 #    'create_uid': uid,
 #}
 #note_id = sock.execute(DB, uid, PASS, 'note.note', 'create', args)
+#search agent from contact app
+agent_id_search = models.execute_kw(DB, uid, PASS,
+    'res.partner', 'search',
+    [[['phone', '=', '']]])
+print(agent_id_search)
