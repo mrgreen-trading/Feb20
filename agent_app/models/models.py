@@ -37,7 +37,7 @@ class AgentModel(models.Model):
     organized = fields.Boolean()
     kind = fields.Char()
     balance = fields.Float()
-    partner_id = fields.Many2one('res.partner', string="Partner")
+    partner_id = fields.Integer()
 
     @api.model
     def _compute_balance(self, amount,status):
