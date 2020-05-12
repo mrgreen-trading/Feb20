@@ -37,6 +37,7 @@ class AgentModel(models.Model):
     organized = fields.Boolean()
     kind = fields.Char()
     balance = fields.Float()
+    verified = fields.Boolean()
 
     @api.model
     def _compute_balance(self, amount,status):
