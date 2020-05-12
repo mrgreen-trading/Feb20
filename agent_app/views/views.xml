@@ -31,8 +31,8 @@
           <field name="city_id"/>
           <field name="area"/>
           <field name="mpesa"/>
+          <field name="verified"/>
           <field name="completed"/>
-          <field name="email"/>
           <field name="balance"/>
         </tree>
       </field>
